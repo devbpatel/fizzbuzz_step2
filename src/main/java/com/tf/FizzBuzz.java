@@ -3,7 +3,7 @@ package main.java.com.tf;
 public class FizzBuzz {
 
 	private static final String DELIMETER = " ";
-	
+
 	public static void main(String[] args) {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		System.out.println(fizzBuzz.buildOutput(1, 20));
@@ -39,7 +39,7 @@ public class FizzBuzz {
 	}
 
 	private void validateRange(int from, int to) {
-		//TODO: Confirm with product team about Zero and Negatives
+		// TODO: Confirm with product team about Zero and Negatives
 		if (from <= 0 || to <= 0) {
 			throw new IllegalArgumentException(
 					"Range cannot have zero or negative number");
